@@ -1,5 +1,5 @@
 {
-  "name": "cli-me",
+  "name": "@screw-hand/cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "16.14.2",
+    "pnpm": "8.6.7"
+  },
+  "packageManager": "pnpm@8.6.7"
 }
