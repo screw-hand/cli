@@ -1,7 +1,10 @@
 {
   "name": "@screw-hand/cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "cli of until",
+  "bin": {
+    "cli": "bin/index.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +16,8 @@
     "node": "16.14.2",
     "pnpm": "8.6.7"
   },
-  "packageManager": "pnpm@8.6.7"
+  "packageManager": "pnpm@8.6.7",
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
 }
