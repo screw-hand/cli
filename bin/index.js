@@ -13,7 +13,8 @@ program
 
 program
   .command("json-file")
-  .description("make json or json string to a json file")
+  .alias('json')
+  .description("make object or json string to a json file")
   .argument("<string>", `json string: '{"arr": [1,2,3]}'`)
   .argument("<filename>", "filename: data or data.json")
   .action(jsonFile);
