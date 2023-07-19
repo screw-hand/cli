@@ -6,10 +6,9 @@ const { Command } = require("commander");
 const program = new Command()
 
 program
-  .name('cli')
+  .name('cli / cli-me')
   .description(pkg.description)
   .version(pkg.version)
-
 
 program
   .command("json-file")
