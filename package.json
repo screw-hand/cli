@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "cli of until",
   "bin": {
-    "cli": "bin/index.js"
+    "cli": "bin/index.js",
+    "cli-me": "bin/index.js"
   },
   "main": "index.js",
   "scripts": {
@@ -13,8 +14,7 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "16.14.2",
-    "pnpm": "8.6.7"
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
   "packageManager": "pnpm@8.6.7",
   "dependencies": {
