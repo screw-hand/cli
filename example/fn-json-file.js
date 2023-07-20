@@ -1,4 +1,4 @@
-const { jsonFile } = require("..");
+import { jsonFile } from "../index.js";
 
 const obj = {
   Client: "Alice",

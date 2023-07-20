@@ -1,8 +1,10 @@
-const jsonFile = require("./lib/json-file");
+import jsonFile from "./lib/json-file.js";
 
 const Index = {
   jsonFile
 }
 
-module.exports = Index;
-exports.default = Index;
+export {
+  jsonFile,
+  Index as default
+}
