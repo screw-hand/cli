@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "cli of until",
   "bin": {
-    "cli": "bin/index.js",
-    "cli-me": "bin/index.js"
+    "cli": "dist/bin/index.js",
+    "cli-me": "dist/bin/index.js"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "swc src -d dist --watch",
+    "build": "swc src -d dist"
   },
   "keywords": [],
   "author": "",
