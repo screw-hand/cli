@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import pkg from './../package.json';
+import pkg from '../../package.json';
 import jsonFile from '../lib/json-file.js';
 import { Command } from "commander";
 
