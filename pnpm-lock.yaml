@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -8,9 +8,9 @@ dependencies:
   commander:
     specifier: ^11.0.0
     version: 11.0.0
-  untildify:
-    specifier: ^5.0.0
-    version: 5.0.0
+  untildify-commonjs:
+    specifier: ^1.0.2
+    version: 1.0.2
 
 packages:
 
@@ -19,7 +19,6 @@ packages:
     engines: {node: '>=16'}
     dev: false
 
-  /untildify@5.0.0:
-    resolution: {integrity: sha512-bOgQLUnd2G5rhzaTvh1VCI9Fo6bC5cLTpH17T5aFfamyXFYDbbdzN6IXdeoc3jBS7T9hNTmJtYUzJCJ2Xlc9gA==}
-    engines: {node: '>=16'}
+  /untildify-commonjs@1.0.2:
+    resolution: {integrity: sha512-pHa1jFg8H9sR77gVPInS2+Qe3tpb5j1HP0tbgO+AEbF36DNXHV8D82sFAsqJM32Jvw0K6A42nOjqVZ2XiPHFnQ==}
     dev: false
