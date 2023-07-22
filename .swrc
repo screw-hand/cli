@@ -1,8 +1,10 @@
 {
   "jsc": {
     "parser": {
-      "syntax": "ecmascript",
-      "tsx": false
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": false,
+      "dynamicImport": false
     },
     "target": "es2015",
     "loose": false,
