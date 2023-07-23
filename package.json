@@ -19,6 +19,6 @@
   "packageManager": "pnpm@8.6.7",
   "dependencies": {
     "commander": "^11.0.0",
-    "untildify": "^5.0.0"
+    "untildify-commonjs": "^1.0.2"
   }
 }

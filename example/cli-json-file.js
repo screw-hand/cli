@@ -2,7 +2,7 @@ const { exec } = require("child_process");
 
 const obj = { Client: "Alice", City: "London", Interests: ["football", "hiking", "gym"] }
 
-const command = `cli json-file '${JSON.stringify(obj)}' ./data.json`;
+const command = `cli json-file '${JSON.stringify(obj)}' ~/Desktop/data.json`;
 
 exec(command, (error, stdout, stderr) => {
   if (error) {

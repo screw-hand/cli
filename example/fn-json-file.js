@@ -6,4 +6,4 @@ const obj = {
   Interests: ["football", "hiking", "gym"],
 };
 
-jsonFile(obj, "./data.json");
+jsonFile(obj, "~/Desktop/data.json");
