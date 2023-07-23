@@ -1,14 +1,15 @@
 #!/usr/bin/env node
-const jsonFile = require('../lib/json-file');
-const pkg = require('./../package.json')
-const { Command } = require("commander");
+import pkg from '../../package.json';
+import jsonFile from '../lib/json-file.js';
+import { Command } from "commander";
 
 const program = new Command()
+const { description, version } = pkg
 
 program
   .name('cli / cli-me')
-  .description(pkg.description)
-  .version(pkg.version)
+  .description(description)
+  .version(version)
 
 program
   .command("json-file")

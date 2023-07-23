@@ -1,5 +1,8 @@
-const fs = require('fs');
-const path = require('path');
+import untildify from 'untildify';
+import { writeFileSync } from 'fs';
+import { resolve } from 'path';
+
+untildify('~/dev')
 
 /**
  * Generates a JSON file from the given raw data and saves it to the specified filename.
@@ -23,13 +26,12 @@ function jsonFile(raw, filename) {
       filename += `.json`
     }
     const pathName = (filename)
-    fs.writeFileSync(pathName, jsonStr);
-    console.log(`Data written to file ${path.resolve(pathName)}`);
+    writeFileSync(pathName, jsonStr);
+    console.log(`Data written to file ${resolve(pathName)}`);
   } catch (e) {
     console.error(e)
   }
   return json
 }
 
-module.exports = jsonFile;
-exports.default = jsonFile;
+export default jsonFile;
