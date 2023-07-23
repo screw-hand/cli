@@ -1,4 +1,4 @@
-import { exec } from "child_process";
+const { exec } = require("child_process");
 
 const obj = { Client: "Alice", City: "London", Interests: ["football", "hiking", "gym"] }
 
