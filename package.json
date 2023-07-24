@@ -20,5 +20,8 @@
   "dependencies": {
     "commander": "^11.0.0",
     "untildify-commonjs": "^1.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1"
   }
 }
