@@ -8,7 +8,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write ./**/*.{js,md,json}",
+    "prettier:check": "prettier --check ./**/*.{js,md,json}"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +22,10 @@
   "dependencies": {
     "commander": "^11.0.0",
     "untildify-commonjs": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^3.0.0"
   }
 }
