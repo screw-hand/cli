@@ -9,8 +9,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "prettier --write ./**/*.{js,md,json}",
-    "prettier:check": "prettier --check ./**/*.{js,md,json}"
+    "prettier": "prettier --write **/*.{js,md,json}",
+    "prettier:check": "prettier --check **/*.{js,md,json}",
+    "lint": "eslint --fix **/*.js",
+    "lint:check": "eslint **/*.js"
   },
   "keywords": [],
   "author": "",
