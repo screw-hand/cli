@@ -12,7 +12,9 @@
     "prettier": "prettier --write **/*.{js,md,json}",
     "prettier:check": "prettier --check **/*.{js,md,json}",
     "lint": "eslint --fix **/*.js",
-    "lint:check": "eslint **/*.js"
+    "lint:check": "eslint **/*.js",
+    "commitlint": "commitlint --edit",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -26,8 +28,11 @@
     "untildify-commonjs": "^1.0.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
     "prettier": "^3.0.0"
   }
 }
