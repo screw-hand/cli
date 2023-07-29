@@ -21,6 +21,9 @@
     "version:major": "bumpp major -y --no-commit --no-tag --no-push",
     "version:minor": "bumpp minor -y --no-commit --no-tag --no-push",
     "version:patch": "bumpp patch -y --no-commit --no-tag --no-push",
+    "publish:major": "npm-run-all version:major release:major",
+    "publish:minor": "npm-run-all version:minor release:minor",
+    "publish:patch": "npm-run-all version:patch release:patch",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -51,6 +54,7 @@
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
+    "npm-run-all": "^4.1.5",
     "prettier": "^3.0.0",
     "standard-version": "^9.5.0"
   }
