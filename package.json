@@ -18,9 +18,9 @@
     "release:major": "standard-version --release-as major",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
-    "version:major": "bumpp major",
-    "version:minor": "bumpp minor",
-    "version:patch": "bumpp patch",
+    "version:major": "bumpp major -y --no-commit --no-tag --no-push",
+    "version:minor": "bumpp minor -y --no-commit --no-tag --no-push",
+    "version:patch": "bumpp patch -y --no-commit --no-tag --no-push",
     "prepare": "husky install"
   },
   "lint-staged": {
