@@ -16,6 +16,15 @@
     "commitlint": "commitlint --edit",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.{js?(x),ts?(x)}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{md,json}": [
+      "prettier --write"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -33,6 +42,7 @@
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
     "prettier": "^3.0.0"
   }
 }
