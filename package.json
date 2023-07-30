@@ -1,6 +1,6 @@
 {
   "name": "@screw-hand/cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "cli of utils.",
   "bin": {
     "cli": "bin/index.js",
