@@ -1,5 +1,6 @@
 name: Node.js CI
 
+
 on: [push]
 
 jobs:
@@ -7,25 +8,14 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [${{ steps.nvm.outputs.NVMRC }}]
-
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Read .nvmrc
-      uses: actions/github-script@v5
-      id: nvm
-      with:
-        script: |
-          return fs.readFileSync('.nvmrc', 'utf8').trim()
+      uses: actions/checkout@v3
 
     - name: Setup Node.js version
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: ${{ steps.nvm.outputs.NVMRC }}
+        node-version-file: '.nvmrc'
 
     - name: Cache .pnpm-store
       uses: actions/cache@v3
@@ -41,3 +31,8 @@ jobs:
 
     - name: Test with coverage
       run: pnpm run test:coverage
+
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
