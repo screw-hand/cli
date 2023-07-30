@@ -1,9 +1,9 @@
-const { jsonFile } = require("..");
+const { jsonFile } = require('..')
 
 const obj = {
-  Client: "Alice",
-  City: "London",
-  Interests: ["football", "hiking", "gym"],
-};
+  Client: 'Alice',
+  City: 'London',
+  Interests: ['football', 'hiking', 'gym'],
+}
 
-jsonFile(obj, "~/Desktop/data.json");
+jsonFile(obj, '~/Desktop/data.json')
