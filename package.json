@@ -51,6 +51,9 @@
   "homepage": "https://github.com/screw-hand/cli#readme",
   "author": "screw-hand",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "index.js",
     "bin/**/*",
