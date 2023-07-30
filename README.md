@@ -55,3 +55,16 @@ pnpm link --global
 cli --help
 cli --version
 ```
+
+# Publish
+
+```shell
+npm i -g nnrm
+nrm use npm
+npm login
+npm whoami
+```
+
+```shell
+npm publish --access=public
+```
