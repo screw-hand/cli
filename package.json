@@ -51,6 +51,12 @@
   "homepage": "https://github.com/screw-hand/cli#readme",
   "author": "screw-hand",
   "license": "MIT",
+  "files": [
+    "index.js",
+    "bin/**/*",
+    "lib/**/*",
+    "example/**/*"
+  ],
   "engines": {
     "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
