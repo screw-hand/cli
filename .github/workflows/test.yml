@@ -1,15 +1,12 @@
 name: Node.js CI
 
+
 on: [push]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [${{ steps.nvm.outputs.NVMRC }}]
 
     steps:
     - name: Checkout code
@@ -25,7 +22,7 @@ jobs:
     - name: Setup Node.js version
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ steps.nvm.outputs.NVMRC }}
+        node-version: ${{ steps.nvm.outputs.result }}
 
     - name: Cache .pnpm-store
       uses: actions/cache@v3
