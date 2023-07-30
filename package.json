@@ -1,7 +1,7 @@
 {
   "name": "@screw-hand/cli",
   "version": "1.0.0",
-  "description": "cli of until",
+  "description": "cli of utils.",
   "bin": {
     "cli": "bin/index.js",
     "cli-me": "bin/index.js"
@@ -37,8 +37,19 @@
       "prettier --write"
     ]
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/screw-hand/cli.git"
+  },
+  "keywords": [
+    "cli",
+    "command line"
+  ],
+  "bugs": {
+    "url": "https://github.com/screw-hand/cli/issues"
+  },
+  "homepage": "https://github.com/screw-hand/cli#readme",
+  "author": "screw-hand",
   "license": "MIT",
   "engines": {
     "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
