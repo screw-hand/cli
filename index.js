@@ -1,8 +1,10 @@
-const jsonFile = require("./lib/json-file");
+const jsonFile = require('./lib/json-file')
+const stringToArr = require('./lib/string-to-arr')
 
 const Index = {
-  jsonFile
+  jsonFile,
+  stringToArr,
 }
 
-module.exports = Index;
-exports.default = Index;
+module.exports = Index
+exports.default = Index
