@@ -9,6 +9,7 @@ const obj = {
 const command = `cli json-file '${JSON.stringify(obj)}' ~/Desktop/data.json`
 
 exec(command, (error, stdout, stderr) => {
+  console.log(command)
   if (error) {
     console.log(`error: ${error.message}`)
     return

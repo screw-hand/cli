@@ -18,12 +18,15 @@ program
 
 program
   .command('string-to-arr')
-  .description('make string join in array with character')
+  .description(
+    'make string join in array with character, will default copy to clipboard',
+  )
   .argument('<string>', 'string: "1 2 3"')
-  .option('-c', '--copy', true, 'copy to clipboard')
-  .option('-f', '--flag', ' ', 'the flag of character to split string')
+  .option('-c, --copy', 'copy to clipboard')
+  .option('-nc, --no-copy', 'not copy to clipboard')
+  .option('-f, --flag <flag>', 'the flag of character to split string', ' ')
   .action((string, options) => {
-    stringToArr(string, options.f || ' ', options.c)
+    stringToArr(string, options.flag || ' ', options.copy)
   })
 
 program.parse()

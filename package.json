@@ -66,6 +66,7 @@
   "packageManager": "pnpm@8.6.7",
   "dependencies": {
     "commander": "^11.0.0",
+    "copy-paste": "^1.5.3",
     "untildify-commonjs": "^1.0.2"
   },
   "devDependencies": {

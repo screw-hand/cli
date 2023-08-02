@@ -5,6 +5,7 @@ const string = '1,2,3'
 const command = `cli string-to-arr '${string}' -f ,`
 
 exec(command, (error, stdout, stderr) => {
+  console.log(command)
   if (error) {
     console.log(`error: ${error.message}`)
     return
