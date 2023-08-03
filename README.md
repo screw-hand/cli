@@ -63,6 +63,7 @@ npm i -g nnrm
 nrm use npm
 npm login
 npm whoami
+npm run publish:[**]
 ```
 
 ```shell
