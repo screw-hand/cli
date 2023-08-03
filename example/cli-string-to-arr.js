@@ -1,12 +1,8 @@
 const { exec } = require('child_process')
 
-const obj = {
-  Client: 'Alice',
-  City: 'London',
-  Interests: ['football', 'hiking', 'gym'],
-}
+const string = '1,2,3'
 
-const command = `cli json-file '${JSON.stringify(obj)}' ~/Desktop/data.json`
+const command = `cli string-to-arr '${string}' -f ,`
 
 exec(command, (error, stdout, stderr) => {
   console.log(command)
