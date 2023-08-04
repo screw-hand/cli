@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const generateCode = require('../lib/generate-code')
 const jsonFile = require('../lib/json-file')
 const stringToArr = require('../lib/string-to-arr')
 const pkg = require('./../package.json')
@@ -28,6 +29,22 @@ program
   .option('-f, --flag <flag>', 'the flag of character to split string', ' ')
   .action((string, options) => {
     stringToArr(string, options.flag, options.copy)
+  })
+
+program
+  .command('generate-code')
+  .alias('gc')
+  .description('generate code')
+  .argument('<template>', 'template: <p>label:{label} -- value: {value}</p>')
+  .argument(
+    '<configList>',
+    'configList: [label1 value1, label2 value2, label3 value3, label4 value4, label5 value5]',
+  )
+  .option('-f, --flag <flag>', 'the flag of character to split string', '{}')
+  .option('-c, --copy', 'copy to clipboard')
+  .option('-nc, --no-copy', 'not copy to clipboard')
+  .action((template, configList, options) => {
+    generateCode(template, configList, options.flag, options.copy)
   })
 
 program.parse()
