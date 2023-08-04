@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-const generateCode = require('../lib/generate-code')
-const jsonFile = require('../lib/json-file')
-const stringToArr = require('../lib/string-to-arr')
+const { generateCode, jsonFile, stringToArr } = require('..')
 const pkg = require('./../package.json')
 const { Command } = require('commander')
 
