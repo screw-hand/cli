@@ -37,8 +37,8 @@ cli / cli-me [options] [command]
 
 The [example](./example) directory where you can find example.
 
-- `cli-[command].js` for cli
-- `fn-[command].js` for Node.js
+- `[command]-cli.js` for cli
+- `[command]-fn.js` for Node.js
 
 # Local Run
 
