@@ -3,7 +3,7 @@
 ![Linux](https://img.shields.io/badge/-Linux-orange?logo=linux)
 ![Node](https://img.shields.io/node/v/@screw-hand/cli)
 ![npm](https://img.shields.io/npm/v/@screw-hand/cli)
-[![codecov](https://codecov.io/gh/screw-hand/cli/branch/main/graph/badge.svg)](https://codecov.io/gh/screw-hand/cli)
+![codecov](https://codecov.io/gh/screw-hand/cli/branch/main/graph/badge.svg)
 
 # cli
 
