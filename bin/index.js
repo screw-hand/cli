@@ -18,6 +18,7 @@ program
 
 program
   .command('string-to-arr')
+  .alias('s2a')
   .description(
     'make string join in array with character, will default copy to clipboard',
   )
