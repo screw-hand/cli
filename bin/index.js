@@ -26,7 +26,7 @@ program
   .option('-nc, --no-copy', 'not copy to clipboard')
   .option('-f, --flag <flag>', 'the flag of character to split string', ' ')
   .action((string, options) => {
-    stringToArr(string, options.flag || ' ', options.copy)
+    stringToArr(string, options.flag, options.copy)
   })
 
 program.parse()
