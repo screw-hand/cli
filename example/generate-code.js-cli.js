@@ -10,7 +10,9 @@ const configList = [
   'label5 value5',
 ]
 
-const command = `cli generate-code '${template}' '[${configList}]'`
+const command = `cli generate-code '${template}' '${JSON.stringify(
+  configList,
+)}'`
 
 exec(command, (error, stdout, stderr) => {
   console.log(command)
