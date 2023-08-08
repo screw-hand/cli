@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/screw-hand/cli/compare/v1.2.2...v1.3.0) (2023-08-08)
+
+### Features
+
+- string-to-arr support alias `s2a` ([190e289](https://github.com/screw-hand/cli/commits/190e289cb5b996f40ca5c27b109ba7c83aff4096))
+- update the example file of naming ([5c1a0af](https://github.com/screw-hand/cli/commits/5c1a0aff8d09854f964dd4cce012fc51309cf1db))
+
 ### [1.2.2](https://github.com/screw-hand/cli/compare/v1.2.0...v1.2.2) (2023-08-03)
 
 ## [1.2.0](https://github.com/screw-hand/cli/compare/v1.0.2...v1.2.0) (2023-08-03)
