@@ -7,9 +7,9 @@
 
 # cli
 
-cli of utils. a cross-platform command-line interface (CLI) utilities toolkit powered by Node.js. Our goal is to simplify and enhance the daily development experience for developers by providing a suite of powerful, efficient, and user-friendly CLI tools.
+cli of utils. a cross-platform command-line interface (CLI) utilities toolkit powered by Node.js. simplify and enhance the daily development experience for developers by providing a suite of powerful, efficient, and user-friendly CLI tools.
 
-Since our project is developed with Node.js, it has excellent cross-platform compatibility. Whether you're developing on Windows, Linux, or MacOS, you can conveniently use our utilities toolkit.
+Supported Windows, Linux, or MacOS.
 
 # Install
 
@@ -20,25 +20,34 @@ npm i -g @screw-hand/cli
 ## Usage
 
 ```shell
-cli / cli-me [options] [command]
+$ cli
+Usage: cli / cli-me [options] [command]
+
+cli of utils.
+
+Options:
+  -V, --version                                       output the version number
+  -h, --help                                          display help for command
+
+Commands:
+  json-file|json <string> <filename>                  make object or json string to a json file
+  string-to-arr|s2a [options] <string>                make string join in array with character, will default copy to clipboard
+  generate-code|gc [options] <template> <configList>  generate code
+  help [command]                                      display help for command
 ```
-
-## Options
-
-`-V, --version`: Output the version number
-`-h, --help`: Display help for command
-
-## Commands
-
-`json-file|json <string> <filename>`: Make object or JSON string to a JSON file
-`help [command]`: Display help for a specific command. If no command is specified, display help for all commands.
 
 # Examples
 
 The [example](./example) directory where you can find example.
 
-- `[command]-cli.js` for cli
-- `[command]-fn.js` for Node.js
+- `[command]-cli.js` using by cli
+- `[command]-fn.js` using by Node.js
+
+# How to run examples ?
+
+```shell
+node example/[command]-(fn|cli).js
+```
 
 # Local Run
 
